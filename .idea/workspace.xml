@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29f2e8ef-ebba-44f6-8fa3-5c2af85474ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="29f2e8ef-ebba-44f6-8fa3-5c2af85474ab" name="Changes" comment="project for sprint4">
+      <change afterPath="$PROJECT_DIR$/src/test/java/yandexScooterTest/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YandexScooterTest/ListQuestionsAboutImportant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexScooterTest/ListQuestionsAboutImportant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YandexScooterTest/PageOpject/ForWhomScooterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexScooterTest/pageOpject/ForWhomScooterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YandexScooterTest/PageOpject/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexScooterTest/pageOpject/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YandexScooterTest/PageOpject/RentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexScooterTest/pageOpject/RentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YandexScooterTest/ScooterOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexScooterTest/ScooterOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,19 +57,18 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ScooterOrder (1)">
-    <configuration name="ListOfQuestions.checkTextInDropDownList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sprint4" />
+  <component name="RunManager" selected="JUnit.ListQuestionsAboutImportant (1)">
+    <configuration name="ListQuestionsAboutImportant (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="YandexScooterTest.*" />
+          <option name="PATTERN" value="yandexScooterTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="YandexScooterTest" />
-      <option name="MAIN_CLASS_NAME" value="YandexScooterTest.ListOfQuestions" />
-      <option name="METHOD_NAME" value="checkTextInDropDownList" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="yandexScooterTest" />
+      <option name="MAIN_CLASS_NAME" value="yandexScooterTest.ListQuestionsAboutImportant" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,13 +77,29 @@
       <module name="sprint4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="YandexScooterTest.*" />
+          <option name="PATTERN" value="yandexScooterTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="YandexScooterTest" />
-      <option name="MAIN_CLASS_NAME" value="YandexScooterTest.ListQuestionsAboutImportant" />
+      <option name="MAIN_CLASS_NAME" value="yandexScooterTest.ListQuestionsAboutImportant" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListQuestionsAboutImportant.checkAnswerText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="yandexScooterTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="yandexScooterTest" />
+      <option name="MAIN_CLASS_NAME" value="yandexScooterTest.ListQuestionsAboutImportant" />
+      <option name="METHOD_NAME" value="checkAnswerText" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,40 +123,39 @@
       <module name="sprint4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="YandexScooterTest.*" />
+          <option name="PATTERN" value="yandexScooterTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="YandexScooterTest" />
-      <option name="MAIN_CLASS_NAME" value="YandexScooterTest.ScooterOrder" />
+      <option name="MAIN_CLASS_NAME" value="yandexScooterTest.ScooterOrder" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScooterOrder.checkOrderOnBottomButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sprint4" />
+    <configuration name="ScooterOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="YandexScooterTest.*" />
+          <option name="PATTERN" value="yandexScooterTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="YandexScooterTest" />
-      <option name="MAIN_CLASS_NAME" value="YandexScooterTest.ScooterOrder" />
-      <option name="METHOD_NAME" value="checkOrderOnBottomButton" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="yandexScooterTest.ScooterOrder" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ListQuestionsAboutImportant (1)" />
+        <item itemvalue="JUnit.ListQuestionsAboutImportant.checkAnswerText" />
         <item itemvalue="JUnit.ScooterOrder (1)" />
         <item itemvalue="JUnit.ScooterOrder" />
         <item itemvalue="JUnit.ListQuestionsAboutImportant" />
-        <item itemvalue="JUnit.ScooterOrder.checkOrderOnBottomButton" />
-        <item itemvalue="JUnit.ListOfQuestions.checkTextInDropDownList" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667489174405</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="project for sprint4">
+      <created>1667490758832</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667490758832</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +223,7 @@
     <MESSAGE value="first commit pom.xml" />
     <MESSAGE value="project sprint4" />
     <MESSAGE value="some visual update" />
-    <option name="LAST_COMMIT_MESSAGE" value="some visual update" />
+    <MESSAGE value="project for sprint4" />
+    <option name="LAST_COMMIT_MESSAGE" value="project for sprint4" />
   </component>
 </project>

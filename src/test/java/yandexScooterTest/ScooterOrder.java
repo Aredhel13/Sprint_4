@@ -1,21 +1,14 @@
-package YandexScooterTest;
+package yandexScooterTest;
 
-import YandexScooterTest.PageOpject.*;
-import org.junit.After;
+import yandexScooterTest.pageOpject.*;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.concurrent.TimeUnit;
 
 @RunWith(Parameterized.class)
-public class ScooterOrder {
-    WebDriver driver;
+public class ScooterOrder extends BaseTest{
     private final String userName;
     private final String userSurname;
     private final String userAddress;
@@ -44,12 +37,6 @@ public class ScooterOrder {
         };
     }
 
-    @Before
-    public void preSettings() {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/Lenovo/WebDriver/bin/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-    }
 
     @Test
     public void checkOrderProcess() {
@@ -64,13 +51,8 @@ public class ScooterOrder {
 
         RentPage rentPage = new RentPage(driver);
         rentPage.inputValuesInRentFormAndCreateOrder(orderDate, comment);
-        Assert.assertEquals("Заказ оформлен", rentPage.getTextFromOrderProcessedWindow());
+        Assert.assertTrue(rentPage.getTextFromOrderProcessedWindow().contains("Заказ оформлен"));
 
-    }
-
-    @After
-    public void teardown(){
-        driver.quit();
     }
 
 }

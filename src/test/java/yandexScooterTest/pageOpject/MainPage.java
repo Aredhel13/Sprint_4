@@ -1,4 +1,4 @@
-package YandexScooterTest.PageOpject;
+package yandexScooterTest.pageOpject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,13 +9,8 @@ public class MainPage {
     private WebDriver driver;
     private final String url = "https://qa-scooter.praktikum-services.ru/";
     //локатор первого вопроса в списке
-    private final By firstQuestionXpath = By.id("accordion__heading-0");
-    //локатор второго вопроса в списке
-    private final By secondQuestionXpath = By.id("accordion__heading-1");
-    //локатор ответа на первый вопрос
-    private final By firstAnswerXpath = By.xpath(".//div[@id='accordion__panel-0']/p");
-    //локатор ответа на второй вопрос
-    private final By secondAnswerXpath = By.xpath(".//div[@id='accordion__panel-1']/p");
+    private static final String questionId = "accordion__heading-";
+    private static final String answerId = ".//div[@id='accordion__panel-";
     //локатор кнопки "Заказать" вверху страницы
     public static final By orderButtonOnTop = By.className("Button_Button__ra12g");
     //окатор кнопки "Заказать" внизу страницы
@@ -27,28 +22,21 @@ public class MainPage {
         this.driver = driver;
     }
 
-    public By getFirstQuestionXpath() {
-        return firstQuestionXpath;
-    }
-
-    public By getSecondQuestionXpath() {
-        return secondQuestionXpath;
-    }
-
-    public By getFirstAnswerXpath() {
-        return firstAnswerXpath;
-    }
-
-    public By getSecondAnswerXpath() {
-        return secondAnswerXpath;
-    }
-
-
     //открыть главную страницу
     public void openMainPage(){
         driver.get(url);
     }
 
+    //получаем локатор вопроса
+    public static By getQuestionLocator(int number){
+//        String xpath = ;
+        return By.id(questionId + number);
+    }
+    //получаем локатор ответа
+    public static By getAnswerLocator(int number){
+        return By.xpath(answerId + number +"']/p");
+
+    }
     //кликнуть по элементу
     public void clickOnElement(By element) {
         driver.findElement(element).click();

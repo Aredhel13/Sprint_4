@@ -1,4 +1,4 @@
-package YandexScooterTest.PageOpject;
+package yandexScooterTest.pageOpject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
